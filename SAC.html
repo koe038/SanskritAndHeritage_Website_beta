@@ -1,0 +1,406 @@
+<!----You may change format if you wish----->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sanskrit and Heritage IIT KGP/Students/Research Projects/Sanskrit and NLP</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size:125%;
+  background-color: #EDE2C7;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
+}
+
+/* Style the header */
+header {
+  background-color: #59421C;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  background: #DA9C29;
+  padding: 5px;
+}
+
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #EDE2C7;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 20px 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+}
+
+.dropdown {
+  float: left;
+  overflow: auto;
+}
+
+.dropdown .dropbtn {
+  padding: 20px 0px;
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #000;
+}
+
+.navbar a.active{
+  background-color: #DA9C29;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 14px 16px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+	<a>SANSKRIT AND HERITAGE <img src="images/favicon.png" alt="KGP Logo" style="width:20px"></a>
+	<a href="index.html">Home<i class="fa fa-fw fa-home"></i></a> 
+	
+   	 <div class="dropdown">	 
+	  <a href="student_works.html" class="active">Students<i class="fa fa-fw fa-user"></i></a>
+      <button class="dropbtn">
+      </button>
+      <div class="dropdown-content">
+        <a href="content.html">Content and videos</a>
+        <a href="research.html">Research Projects</a>
+        <a href="blogs.html">Blogs</a>
+		<a href="skit.html" class="w3-disabled">Short Skits and Plays</a>
+		<a href="others.html" class="w3-disabled">Others</a>
+      </div>
+	</div>
+	<div class="dropdown">	 
+	  <a href="categories.html">Categories <i class="fa fa-navicon"></i></a>
+      <button class="dropbtn">
+        
+      </button>
+	<div class="dropdown-content">
+        <a href="lit.html" class="w3-disabled">Literature</a>
+        <a href="art.html" class="w3-disabled">Art</a>
+		<a href="phi.html" class="w3-disabled">Philosophy and Spirituality</a>
+        <a href="mat.html" class="w3-disabled">Mathematics</a>
+		<a href="phy.html" class="w3-disabled">Physics and Astronomy</a>
+		<a href="med.html" class="w3-disabled">Medicine</a>
+		<a href="his.html" class="w3-disabled">History</a>
+		<a href="eng.html" class="w3-disabled">Engineering</a>
+		<a href="ent.html" class="w3-disabled">Entertainment</a>
+		<a href="mis.html" class="w3-disabled">Miscellaneous</a>
+      </div>
+	</div>
+	<a href="interviews.html" class="w3-disabled">Interviews <i class="fa fa-comments-o"></i></a>
+	<a href="news.html">Upcoming Events <i class="fa fa-newspaper-o"></i></a>
+	<a href="past.html">Past Events</a>
+	<a href="resources.html">Resources</a>
+    <a href="contact.html">Contact<i class="fa fa-fw fa-envelope"></i></a>
+	<form class="navbar-form navbar-left" action="/action_page.php">
+		<div style="display: inline; float: right;">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <button type="submit" class="btn btn-default"><i class="fa fa-fw fa-search"></i></button>
+		</div>
+		</div>
+    </form>
+</div>
+
+<p>  <a href="research.html" style="color:blue"><i> « <u>Go back to Research Projects</u></i></a></p>
+<div class="w3-content" style="max-width:1200px">
+<div class="w3-card-4 w3-margin w3-white">
+<div class="w3-container w3-margin" align="justify">
+<CENTER>
+	<P><H1><B>Sanskrit and NLP<BR><BR></P></H1></B>
+</CENTER>
+<P><B>Team Name: Sarvam Peace Asti: </P></B>
+	<P><I>OBJECTIVE: CLASSIFYING SANSKRIT SLOKAS USING NATURAL LANGUAGE PROCESSING</I></P>
+	<P><U><BR><BR>Team Members:</P></U>
+	<UL>
+		<LI>Ojasv Kamal</LI>
+		<LI>Aparna Sakshi</LI>
+		<LI>Kumidini Kesana</LI>
+		<LI>Nitish Ranjan</LI>
+		<LI>Prabhat Kumar</LI><BR><BR>
+	</UL>
+	
+	<!-----INSERT VIDEO LINK IN PLACE OF vid_link BELOW------>
+	<center>
+			<iframe width="700" height="393.75" src="images/Research_Projects/Sloka_Classification/Sanskrit Assignment 2.mp4" frameborder="0" allowfullscreen></iframe>
+			<p><i>Video: Sanskrit and NLP</i></p>
+			<p><BR><BR></p>
+	</center>
+</div>
+</div>
+</div>
+<p><br></p>
+
+<header>
+  <h2>Contents</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#1">Introduction</a></li>
+	  <li><a href="#2">What we did?</a></li>
+	  <li><a href="#3">Outcome</a></li>
+	  <!---add all subheadings in this list for ease of navigations--->
+	  <li><a href="#4">Our App and source code</a></li>	  
+	  <li><a href="#5">International Influence</a></li>
+	  <li><a href="#6">Why Sanskrit and NLP?</a></li>
+	  <li><a href="#7">Some Interesting Aspects</a></li>
+	  <li><a href="#8">References</a></li>
+	 </ul>
+	</nav>
+	
+	<article>
+	<div class="w3-content" style="max-width:1200px">
+    <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container w3-margin" align="justify">
+    <P><H3><B><U><BR><BR><a id="1"></a>Introduction</U></B></H3></P>
+    <p>Natural Language Processing is regarded as the hardest branch of Artificial Intelligence. This can be attributed the fact that English(most popular language in the world) has a lot of ambiguity which leads to noisy data collection and thus poor accuracy at test time. A lot of NLP research in Sanskrit has shown better results than English for the same architecture. Based on the results, Scientists have put forth some arguments explaining why.
+</p>
+	<p>
+		<ul>Phonetics:  In English the sounds of the alphabets(26) clash with their counterparts in quite a few occasions. While Sanskrit makes use of 16 Swar and 33  Vyanjan hence clashing is significantly reduced.  Example, when you open a mouth and take a sound from the glottis, the word sound has (अ) there, whereas when the mouth opens up wider it is an (आ) sound. English or any other language in comparison has only an (A) equivalent to ए. Another consequence of number of alphabets is evident as the range of English vocabulary also becomes lesser because the phonetics of a lot of alphabets do not map to individual phonetics of the Sanskrit Varnas.
+</ul>
+<ul>Structure of the language: Each word in Sanskrit can be divided into sub words and this process would continue and the division would stop when we reach a Dhatu. This is similar to algorithmic structure. Ambiguity arises while combining or dividing words could be eliminated by Fuzzy logic or Fuzzy reasoning techniques.
+</ul>
+<ul>Words: Sanskrit dictionary is a very rich one hence representing a word at the machine level is relatively easy. Consider, “I have glasses. “. The stress on this sentence is on the object which is “glasses”. The most obvious question here is what glasses are we talking about, pair of glasses used as a pair of lenses to correct vision or the glass tumblers …. ? In Sanskrit, these two words by their construction are different.
+</ul>
+	</p>
+	<!--<CENTER>
+		<img src="images/img_name.png">
+		<P><I>Fig : Figure name</I></P>
+	</CENTER>-->
+	
+	<!---when writing in the code, format it in a separate block somewhere in betwween the page, and also add a link to a file containing it if you wish--->
+	
+<P><H3><B><U><BR><BR><a id="2"></a>What we did?</U></B></H3></P>
+    <p><ul>We classified all Sanskrit Slokas into three categories: Chanakya Slokas, Vidur Niti Slokas and all the others as a generic Sanskrit-Slogan category.</ul>
+<ul>Our aim was to classify a given unseen Sloka correctly to one of these categories.</ul>
+<ul>We pre-processed the data and used the classical LSTM(Long Short-Term Memory) architecture for the task of classification.</ul>
+<ul>In 1997, LSTM was proposed by Sepp Hochreiter and Jürgen Schmidhuber. By introducing Constant Error Carousel (CEC) units, LSTM deals with the vanishing gradient problem. The initial version of LSTM block included cells, input and output gates</ul>
+<ul>LSTM networks were a major component of a network that achieved a record 17.7% phoneme error rate on the classic TIMIT natural speech dataset in 2013.</ul>
+
+<ul>Google started using an LSTM for speech recognition on Google Voice in 2015. Now the optimizations had cut down the errors by about 49%.</ul>
+
+ <ul>Facebook performed some 4.5 billion automatic translations every day using long short-term memory networks in 2017.</ul>
+
+<ul>A typical LSTM cell looks something like this today!!</ul>
+
+
+	</p>
+	<CENTER>
+		<img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/The_LSTM_cell.png" width="300" height="200">
+		<P><I>Fig : LSTM cell</I></P>
+	</CENTER>
+
+<P><H3><B><U><BR><BR><a id="3"></a>Outcome</U></B></H3></P>
+    <p><ul>The Sanskrit sloka data looks like this as shown in figure below with slokas and their corresponding class labels(type of sloka).
+    	<CENTER>
+		<img src="images/Research_Projects/Sloka_Classification/sloka.png" width="600" height="300">
+		<P><I>Fig : Slokas</I></P>
+	</CENTER>
+</ul>
+<ul>We defined some hyperparameters for our network in a fashion shown in fig 2.
+<CENTER>
+		<img src="images/Research_Projects/Sloka_Classification/hyper_parameters.png" width="300" height="150">
+		<P><I>Fig : Hyperparameters</I></P>
+	</CENTER>
+</ul>
+<ul>Definition of these hyperparameters is necessary to define a model.
+</ul>
+<ul>There are ways to tune these hyperperameters for some extra boost in performance but for simplicity, we have not done that.
+</ul>
+<ul>An LSTM model was defined using the hyperparameters defined above and also defining loss function, optimization method, network structure and activation function.
+	<CENTER>
+		<img src="images/Research_Projects/Sloka_Classification/model.png">
+		<P><I>Fig : Model Summary</I></P>
+	</CENTER>
+</ul>
+
+<ul>We used Keras library which is a high-level library of tensorflow(which is an Artificial Intelligence framework developed by the Google Brain team at Google.)
+
+</ul>
+
+ <ul>This is a highly optimized and industry grade Artificial Intelligence library.</ul>
+
+<ul>Finally after training, the model we tested the model and achieved an accuracy of 85% in test data set. Here is an example:
+	<CENTER>
+		<img src="images/Research_Projects/Sloka_Classification/predict.png" height="150">
+		<P><I>Fig : A sloka classified as general sanskrit slogan</I></P>
+	</CENTER>
+</ul>
+	</p>
+
+
+<P><H3><B><U><BR><BR><a id="4"></a>Our App and Source Code</U></B></H3></P>
+</p>
+<script src="https://anvil.works/embed.js" async></script>
+<iframe style="width:100%;" data-anvil-embed src="https://B5LXYGVW7QDX5YW2.anvil.app/NHXMX6WDKPSDYPMABBZHMU3R"></iframe>
+</p>
+<p><a href="https://github.com/Aparna-Sakshi/NLP_in_Sanskrit" style="color:blue">Check out github repo for the source code.</a></p>
+
+
+<P><H3><B><U><BR><BR><a id="5"></a>International Influence</U></B></H3></P>
+<p><ul>This project is highly impactful in promoting Sanskrit culture worldwide.</ul>
+<ul>The technology is used in search engines across the world to suggest relevant webpages.
+</ul>
+<ul>A full scale and a more optimized version of this algorithm is used to educate people about Sanskrit, its history and its eminent advocates.</ul>
+<ul>This is one of the major reasons for its reach amongst different people around the world who appreciate and sustain the language.
+</ul>
+</p>
+
+<P><H3><B><U><BR><BR><a id="6"></a>Why Sanskrit and NLP</U></B></H3></P>
+<p>Why we chose to go with NLP as an assignment topic can be understood by the concept of environmental psychology. It is an interdisciplinary field that focuses on the interplay between individuals and their surroundings. Our social and learning environment revolve around technology hence it is highly likely to create biases in our minds. Besides that, we are very proud of our culture and hence we constantly think about it’s propagation worldwide. Considering all of this NLP was an idea we were excited about.
+</p>
+
+<P><H3><B><U><BR><BR><a id="7"></a>Some Interesting Aspects</U></B></H3></P>
+<p><ul>The first computational problem attacked in the framework of the Sanskrit Heritage platform wassegmentation, i.e. sandhi-viccheda. Sandhi occurs in Sanskrit in several places. In generativemorphology, it occurs internally for stem formation and affixes glueing, for instance for declensionand conjugation. This so-called internal sandhi is complex, since it gives rise to long-distanceretroflexion, not easily invertible by finite-state methods.
+</ul>
+<ul>Recently, the news speculating around many prestigious tech-science circles is that NASA has made an incredible discovery about computing language for Artificial intelligence. According to research, NASA claims that Sanskrit – the ancient Hindu language – is the most suitable language to develop computer programming for their Artificial Intelligence program. The grammar of Sanskrit is rule-bound, formula-bound, and logical, which makes it highly appropriate to write algorithms.
+
+</ul>
+<ul>In the natural language models like LSTM using recurrent neural networks, there is an under lying assumption that next word is dependent on the word preceeding it, but in Sanskrit order of the word doesn't generally play an important role in language understanding. This possess another challenge in sanskrit with NLP.  To sort out this problem, some state of art algorithms have used a graph based approach to find dependency between each word in a sentence and then parse it to obtain relevant information.
+</ul>
+
+</p>
+  </div>
+  </div>
+  </div>
+	</article>
+</section>
+
+<footer>
+  <p><h3><u><a id="8"></a>References</u></h3></p>
+  <p><a href="http://www.ripublication.com/gjmbs_spl/gjmbsv3n10_14.pdf">Sanskrit as a Programming Language and Natural Language Processing </a></p>
+  <p><a href="https://indiaai.gov.in/article/fundamentals-of-nlp-research-in-sanskrit">Fundamentals of NLP research in Sanskrit </a></p>
+
+
+  <p><a href="https://www.kaggle.com/disisbig/sanskrit-shlokas-dataset ">iNLTK Sanskrit Shlokas Dataset </a></p>
+  <p><a href="https://en.wikipedia.org/wiki/Long_short-term_memory">Long short-term memory </a></p>
+  <p><a href="https://proceedings.neurips.cc/paper/1996/file/a4d2f0d23dcc84ce983ff9157f8b7f88-Paper.pdf">LSTM can Solve Hard Long Time Lag Problems
+ </a></p>
+  <p><a href="https://www.semanticscholar.org/paper/NATURAL-LANGUAGE-PROCESSING-AND-SANSKRIT-Jha-Jha/412d13438fd72d97fd66ce8b7d3bb00cc3fe1ad8">NATURAL LANGUAGE PROCESSING AND SANSKRIT
+ </a></p>
+  <p><a href="https://bstrategyhub.com/sanskrit-is-the-best-language-for-artificial-intelligence-says-nasa/
+">Is Sanskrit the Best Language for Artificial Intelligence? See what NASA says </a></p>
+
+
+</footer>
+	

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sanskrit and Heritage IIT KGP/Past Events/IKS_FDP</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+<style>
+#more {display: none;}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size:125%;
+  background-color: #EDE2C7;
+  font-family: Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
+}
+
+/* Style the header */
+header {
+  background-color: #59421C;
+  padding: 5px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  background: #DA9C29;
+  padding: 5px;
+}
+
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #E1D9BE;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 20px 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+}
+
+.dropdown {
+  float: left;
+  overflow: auto;
+}
+
+.dropdown .dropbtn {
+  padding: 20px 0px;
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #000;
+}
+
+.navbar a.active{
+  background-color: #DA9C29;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 14px 16px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<div class="navbar">
+	<a>SANSKRIT AND HERITAGE <img src="images/favicon.png" alt="KGP Logo" style="width:20px"></a>
+	<a href="index.html">Home<i class="fa fa-fw fa-home"></i></a> 
+	
+   	 <div class="dropdown">	 
+	  <a href="student_works.html">Students<i class="fa fa-fw fa-user"></i></a>
+      <button class="dropbtn">
+        
+      </button>
+      <div class="dropdown-content">
+        <a href="content.html">Content and videos</a>
+        <a href="research.html">Research Projects</a>
+        <a href="blogs.html">Blogs</a>
+		<a href="skit.html" class="w3-disabled">Short Skits and Plays</a>
+		<a href="others.html" class="w3-disabled">Others</a>
+      </div>
+	</div>
+	<div class="dropdown">	 
+	  <a href="categories.html">Categories <i class="fa fa-navicon"></i></a>
+      <button class="dropbtn">
+        
+      </button>
+	<div class="dropdown-content">
+        <a href="lit.html" class="w3-disabled">Literature</a>
+        <a href="art.html" class="w3-disabled">Art</a>
+		<a href="phi.html" class="w3-disabled">Philosophy and Spirituality</a>
+        <a href="mat.html" class="w3-disabled">Mathematics</a>
+		<a href="phy.html" class="w3-disabled">Physics and Astronomy</a>
+		<a href="med.html" class="w3-disabled">Medicine</a>
+		<a href="his.html" class="w3-disabled">History</a>
+		<a href="eng.html" class="w3-disabled">Engineering</a>
+		<a href="ent.html" class="w3-disabled">Entertainment</a>
+		<a href="mis.html" class="w3-disabled">Miscellaneous</a>
+      </div>
+	</div>
+	<a href="interviews.html" class="w3-disabled">Interviews <i class="fa fa-comments-o"></i></a>
+	<a href="news.html">Upcoming Events <i class="fa fa-newspaper-o"></i></a>
+	<a href="past.html" class="active">Past Events <i class="fa fa-file-text"></i></a>
+	<a href="resources.html">Resources <i class="fa fa-book"></i></a>
+    <a href="contact.html">Contact<i class="fa fa-fw fa-envelope"></i></a>
+	<form class="navbar-form navbar-left" action="/action_page.php">
+		<div style="display: inline; float: right;">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <button type="submit" class="btn btn-default"><i class="fa fa-fw fa-search"></i></button>
+		</div>
+		</div>
+    </form>
+	
+</div>
+<p>  <a href="past.html" style="color:blue"><i> « <u>Go back to Past Events</u></i></a></p>
+<center><p><h2><b><u>Faculty Development Programme 2020</p></h2></b></u>
+<p>(On Indian Knowledge Systems in Contemporary Education and Practices)<BR><BR></p>
+
+
+
+<center>
+	<img src="images/iks.jpg" alt="iks" width="700" height="393.75">
+	<p><i> Image: FDP 2020 (on IKS) Poster</i></p>
+</center>
+<div class="w3-content" style="max-width:1200px">
+<div class="w3-card-4 w3-margin w3-white">
+<div class="w3-container w3-margin" align="justify">
+<p><br>This faculty development programme was held between 5-19 November, 2020 with the main aim of exploring Indian Knowledge systems in context of New Education Policy 2020 launched. It is an initiative of Department of Contemplative and Behavioural Sciences, Sri Sri University, Cuttack, Odisha in Collaboration with Centre for Professional Development in Higher Education (CPDHE) UGC-HRDC, Delhi University.</p>
+
+<p>The programme aims at bringing the Indian Knowledge System (IKS) at the center stage academic discourse. The programme was inaugarated and blessed by global spiritual leader, humanitarian and founder of The Art of Living, Gurudev Sri Sri Ravi Shankar, Hon. Union Education Minister Dr. Ramesh Pokhariyal’ Nihshank, Padma Vibhushana Dr. Sonal Man Singh, Sri Mukhul Kanitkar and many other esteemed dignitaries.</p>
+
+<p>The challenges of contemporary global civilization are many and there are voices asking for alternatives, searching for systems of thought that promote harmony and mutuality rather than conflict and difference. There is a universally felt need for a new system of values and thought that has the possibility of creating a world of peace and cooperation. Indian Civilization the answer in itself. So, inculcating Indian Civilization in Education will help us find new ways of dealing with the present challenges. And that idea was the main motto of this programme.</p>
+
+<p>The 14-day FDP covers the three domains of Heritage and Context of IKS, Domains & Scope of IKS, and the Pedagogy and Challenges to Reclaiming IKS.</p>
+
+<p>Lastly, the main objective of this programme is to offer a comprehensive perspective on the need, relevance and essence of IKS to the academic community, particularly the faculty engaged in teaching at colleges and universities of India. The programme also discussed in parts the transition from an education system that borrowed almost entirely from the West, while being almost dismissive about the authenticity and validity of the traditional Indian knowledge systems</p>
+
+<p><br></p>
+</div>
+</div>
+</div>
+<p><br></p>
+<footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
+  <a href="past.html"><button class="w3-button w3-black w3-padding-large w3-margin-bottom"> « Go back to read more articles on Past Events</button></a>
+</footer>
